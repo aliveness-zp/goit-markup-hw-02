@@ -1,8 +1,14 @@
 :root {
   color: red;
-
 }
+
+
 p {
   color: red;
   font-size: 40px;
-}
+    
+             }
+
+             .one {
+              color: red;
+             }
