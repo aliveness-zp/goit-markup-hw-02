@@ -10,9 +10,7 @@ body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
@@ -57,13 +55,20 @@ ul {
 .hero-btn {
   background-color: var(--accent-color);
   color: var(--primary-background-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.06em;
   text-align: center;
   border: none;
   cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* nav */
@@ -98,12 +103,29 @@ ul {
 
 /* benefits */
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .benefits-list-title {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.benefits-list-text {
+  line-height: 1.71;
 }
 
 /* services */
@@ -118,6 +140,11 @@ ul {
 }
 
 /* team */
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
 .team-list-title {
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -133,6 +160,14 @@ ul {
 }
 
 /* footer */
+
+.footer-logo {
+  color: var(--primary-background-color);
+}
+
+.footer-list {
+  line-height: 1.71;
+}
 
 .footer-list-link.map {
   color: var(--primary-background-color);
@@ -152,10 +187,10 @@ ul {
 /* portfolio */
 
 /* work-nav */
-.work-nav-list-btn {
+.work-nav-btn {
   background-color: var(--secondary-background-color);
   color: var(--secondary-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -165,8 +200,8 @@ ul {
   cursor: pointer;
 }
 
-.work-nav-list-btn:hover,
-.work-nav-list-btn:focus {
+.work-nav-btn:hover,
+.work-nav-btn:focus {
   background-color: var(--accent-color);
   color: var(-primary-background-color);
 }
